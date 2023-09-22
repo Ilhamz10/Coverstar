@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+header video{
+    width: 60%;
+}
+
+section{
+    padding: 50px 0;
+}
+
+section h2{
+    color: #00C6FE;
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-align: center;
+}
+
+section p{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+section span{
+    color: #00C6FE;
+}
+
+.info{
+    border: 2px dashed white;
+    padding: 0 20px 40px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.block{
+    border-bottom: 2px solid #00C6FE;
+    padding: 20px 10px;
+}
+
+.book-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.book-info{
+    margin-top: 30px;
+}
+
+.book-info button{
+    padding: 20px 30px;
+    border: none;
+    background: green;
+    color: white;
+    border-radius: 5px;
+}
+
+.book-section img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer{
+    text-align: center;
+    color: lightgray;
+    padding: 30px 0;
+}
+
+@media (width < 770px) {
+    .book-section{
+        grid-template-columns: 1fr;
+    }
+
+    section h2{
+        font-size: 1.5em;
+    }
+
+    section p{
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    header video{
+        width: 100%;
+    }
+}
